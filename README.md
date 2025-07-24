@@ -52,6 +52,7 @@ bash run_pipeline.sh docking_dir
 
 **Note:** 
 First, place your folder inside the data directory, the folder structure should be like this:
+```
 data/
 └── docking_dir/
     ├── mol1_1/
@@ -60,13 +61,17 @@ data/
     ├── mol2_1/
     │   ├── 6o0h_protein.pdb
     │   └── mol2_1.pdb
+...
+```
 The ligands files should be named molx_1.pdb file.
 you can change the protein file path in preprocessing_docking.py, 
 In this script, we use label.csv file to label molecules. In our experiment, we used 50 molecules, but 
 you can add or remove entries based on the number of molecules you have —— just make sure to insert them in the file using the format molx_1, x.0.
 Example format:
+```
 pdbid,-logKd/Ki
 mol1_1,1.0
 mol2_1,2.0
 ...
 mol50_1,50.0
+```
