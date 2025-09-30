@@ -22,9 +22,9 @@ rdkit==2022.09.3  # important!!!
 pymol==2.4.1
 tqdm==4.63.0
 ```
-We also provide a requirements.txt file to facilitate environment setup.
+We also provide a environment.yml file to facilitate environment setup.
 ```
-conda create –name HoloGNN –file requirements.txt 
+mamba env create -f environment.yml
 ```
 
 ## Usage
