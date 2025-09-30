@@ -25,6 +25,7 @@ tqdm==4.63.0
 We also provide a environment.yml file to facilitate environment setup.
 ```
 mamba env create -f environment.yml
+conda env create -f environment.yml
 ```
 
 ## Usage
